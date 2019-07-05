@@ -43,6 +43,10 @@ h2{
   margin-top: 103px;
   margin-right: 10px;
 }
+#main{
+  width: 100%;
+  padding: 2px;
+}
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
