@@ -10,7 +10,7 @@
         <div class="header">
         <img src="Omnia_logo.jpg" width="160" height="160" id="logo">
         </div>
-        <div class="topnav"id='myTopnav' id="navbar">
+        <div class="topnav" id='myTopnav' id="navbar">
                 <a class="active" href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#trainer">Trainer</a>
@@ -18,10 +18,28 @@
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                         <i class="fa fa-bars"></i> 
                     </a>
+        </div>
+            <div class="slideshow_container">
+              <div class="mySlides fade">
+              <img src="cover.jpg" id="main" style="width:100%" class="main">
+              </div>
+              <div class="mySlides fade">
+                  <img src="cover_two.jpg" style="width:100%" class="main" >
+              </div>
+              <div class="mySlides fade">
+                  <img src="cover_three.jpg" style="width:100%" class="main">
+              </div>
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+              <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span>
+                  <span class="dot" onclick="currentSlide(3)"></span>
             </div>
-        <div>
-              <img src="cover.jpg" id="main">
-         </div>
+        
+        </div>
         <script>
                 function myFunction() {
                   var x = document.getElementById("myTopnav");
@@ -31,7 +49,36 @@
                     x.className = "topnav";
                   }
                 }
+        </script>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
             </script>
+            
             
     
     </body>
