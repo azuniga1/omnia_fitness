@@ -5,12 +5,14 @@
         <link href="styles.css" type="text/css" rel="stylesheet"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     </head>
     <body>
         <div class="header">
         <img src="Omnia_logo.jpg" width="160" height="160" id="logo">
         </div>
-        <div class="topnav" id='myTopnav' id="navbar">
+        <div id="topmenu">
+          <div class="topnav" id='myTopnav' id="navbar" id="sticky">
                 <a class="active" href="javascript:void(0);">Home</a>
                 <a href="#about">About</a>
                 <a href="#Trainer">Trainer</a>
@@ -18,7 +20,8 @@
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                         <i class="fa fa-bars"></i> 
                     </a>
-        </div>
+          </div>
+      </div>
         <div class="slideshow_container">
               <div class="mySlides fade">
               <img src="cover.jpg" id="main" style="width:100%" class="main">
@@ -56,30 +59,33 @@
         <div class="fb_resposive">
         <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FOMNIAfitnessNT%2Fvideos%2F280872525903547%2F&show_text=0&width=476" width="476" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
       </div> 
+
       <script>
-          window.onscroll = function() {myFunction1()};
-          
-          var navbar = document.getElementById("myTopnav");
-          var sticky = navbar.offsetTop;
-          
-          function myFunction1() {
-            if (window.pageYOffset >= sticky) {
-              navbar.classList.add("sticky")
-            } else {
-              navbar.classList.remove("sticky");
-            }
-          }
-          </script>
-        <script>
-          function myFunction() {
+           function myFunction() {
             var x = document.getElementById("myTopnav");
             if (x.className === "topnav") {
-              x.className += " responsive";
-            } else {
-              x.className = "topnav";
-            }
-          }
+             x.className += " responsive";
+              } else {
+            x.className = "topnav";
+                    }
+                }
           </script>
+          <script>
+              window.onscroll = function() {myFunction1()};
+              
+              var navbar = document.getElementById("topmenu");
+              var sticky = navbar.offsetTop;
+              
+              function myFunction1() {
+                if (window.pageYOffset >= sticky) {
+                  navbar.classList.add("sticky")
+                } else {
+                  navbar.classList.remove("sticky");
+                }
+              }
+        </script>
+       
+
         <script>
             var slideIndex = 1;
             showSlides(slideIndex);
@@ -108,5 +114,10 @@
               dots[slideIndex-1].className += " active";
             }
             </script>
+
+
+
+            
+    
     </body>
 </html>
