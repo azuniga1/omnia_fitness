@@ -12,15 +12,15 @@
         <img src="Omnia_logo.jpg" width="160" height="160" id="logo">
         </div>
         <div class="topnav" id='myTopnav' id="navbar">
-                <a class="active" href="#home">Home</a>
+                <a class="active" href="javascript:void(0);">Home</a>
                 <a href="#about">About</a>
-                <a href="#trainer">Trainer</a>
-                <a href="#about">Contact</a>
+                <a href="#Trainer">Trainer</a>
+                <a href="#Contact">Contact</a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                         <i class="fa fa-bars"></i> 
                     </a>
         </div>
-            <div class="slideshow_container">
+        <div class="slideshow_container">
               <div class="mySlides fade">
               <img src="cover.jpg" id="main" style="width:100%" class="main">
               </div>
@@ -38,39 +38,52 @@
                   <span class="dot" onclick="currentSlide(1)"></span> 
                   <span class="dot" onclick="currentSlide(2)"></span>
                   <span class="dot" onclick="currentSlide(3)"></span>
-            </div>
-        
+              </div>
         </div>
         <div class="main_article">
-          <H2 style="font-size: 2vw;">WELCOME TO</H2>
-          <H1 style="font-size: 4vw;">OMNIA</H1>
-          <H2 style="font-size: 2vw;" id="fit">FITNESS</H2>
-          <HR/>
-          <h2 style="font-size: 3vw;">"Join the Pack" and Experience <br>The OMNI fitness Journey!</h2>
-          <div class="main_article1">
+            <H2 style="font-size: 2vw;">WELCOME TO</H2>
+            <H1 style="font-size: 4vw;">OMNIA</H1>
+            <H2 style="font-size: 2vw;" id="fit">FITNESS</H2>
+            <HR/>
+            <h2 style="font-size: 3vw;">"Join the Pack" and Experience <br>The OMNI fitness Journey!</h2>
+            <div class="main_article1">
             <p style="font-size: 1.75vw;" >OMNIA fitness is a unique persoanl training studio,<br> where we pride ourselves in helping you seek out<br>
                 and unleash your greatest potential.<br> With 10 years and counting of persoanl training<br> experience and 
                 continued education<br> (8 years in the U.S.A and now 2 yeras in Asia)<br> we are proud to bring the latest in 
                 exercise<br> science, advanced program design,<br> and nutrition guidance, to Nha Trang, Vietnam.
             </p>
-          </div> 
+            </div>
         </div>
-    </div>
-    <div class="about_video">
-    <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FOMNIAfitnessNT%2Fvideos%2F280872525903547%2F&show_text=0&width=476" width="50%" height="797px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-    </div> 
-</div> 
-</div> 
+        <div class="fb_resposive">
+        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FOMNIAfitnessNT%2Fvideos%2F280872525903547%2F&show_text=0&width=476" width="476" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+      </div> 
+      <script>
+          window.onscroll = function() {myFunction1()};
+          
+          var navbar = document.getElementById("myTopnav");
+          var sticky = navbar.offsetTop;
+          
+          function myFunction1() {
+            if (window.pageYOffset >= sticky) {
+              navbar.classList.add("sticky")
+            } else {
+              navbar.classList.remove("sticky");
+            }
+          }
+          </script>
+
         <script>
-                function myFunction() {
-                  var x = document.getElementById("myTopnav");
-                  if (x.className === "topnav") {
-                    x.className += " responsive";
-                  } else {
-                    x.className = "topnav";
-                  }
-                }
-        </script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }
+          </script>
+       
+
         <script>
             var slideIndex = 1;
             showSlides(slideIndex);
@@ -99,7 +112,9 @@
               dots[slideIndex-1].className += " active";
             }
             </script>
-            
+
+
+
             
     
     </body>
