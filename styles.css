@@ -42,7 +42,7 @@
   display: block;
 }
 .main{
-  height: 295px;
+  height: 290px;
 }
 }
 @media screen and (max-width: 600px) {
@@ -59,6 +59,7 @@
     text-align: left;
   }
 .slideshow_container {
+    z-index: -1;
     padding-top:  2px;
     position: relative;
     margin: auto;
@@ -164,9 +165,38 @@ hr{
   width: 50%;
   margin-right: 45%;
 }
-.about_video{
-  width: 100%;
-  margin-top: 5px;
-  padding-bottom: -10PX;
-  margin-bottom: 10px;
+.video_text{
+  float: right;
+  clear: left;
+  border: 1px solid red;
 }
+.video{
+  border: 1px solid green;
+}
+.fb_resposive {
+  margin-top: 5px;
+  overflow:hidden;
+  padding-bottom:50%;
+  position:relative;
+  height: 0;
+  z-index: -1;
+}
+
+.fb_resposive iframe {
+  left:0;
+  top:0;
+  height:100%;
+  width:50%;
+  position:absolute;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+
+ 
+
+
