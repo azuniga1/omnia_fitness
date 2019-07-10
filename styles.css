@@ -35,7 +35,7 @@
 .topnav .icon{
   display: none;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
 .topnav a:not(:first-child) {display: none;}
 .topnav a.icon {
   float: right;
@@ -45,12 +45,18 @@
   height: 290px;
 }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
 .topnav.responsive {position: relative;}
 .topnav.responsive a.icon {
   position: absolute;
   right: 0;
   top: 0;
+}
+@media only screen and (max-width: 600px) {
+  .column .column2{ 
+    display: block;
+    width: 100%;
+  }
 }
 }
 .topnav.responsive a {
@@ -121,38 +127,26 @@ to {opacity: 1}
 from {opacity: .4} 
 to {opacity: 1}
 }
-H1, H2{
-  text-align: center;
-  margin-right: 40%;
-  padding-top: 1%;
 
-}
 .main_article{
   font-family: Helvetica, sans-serif;
   background-color: #333;
   color: white;
-  text-align: left;
   background-image: url("cover_six.png");
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover; 
-background-size: cover; 
-padding-bottom: 3%;
-
-}
-h1{
-  letter-spacing: 10px;
-  padding: 0px;
-  margin: 0px;
-  margin-right: 40%;
+  -moz-background-size: cover;
+  -o-background-size: cover; 
+  background-size: cover; 
 }
 #fit{
-  color: aqua; 
-  padding: 0px;
-  margin: 0px;
-  margin-right: 40%;
+  color: aqua;
+  margin: 0; 
+}
+#top{
+  margin: 0;
+  padding: 0;
 }
 .main_article1{
   margin-left: 4%;
@@ -160,11 +154,18 @@ h1{
   padding: 10px;
   text-align: center;
   background-color: #717171;
-  background-color: hsla(0, 100%, 100%, 0.15)
+  background-color: hsla(0, 100%, 100%, 0.30);
+  margin-bottom: 1%;
 }
+.main_article2{
+  margin-left: 4%;
+  width: 53%;
+  padding: 10px;
+  text-align: center;
+}
+.main_article2 
 hr{
   width: 50%;
-  margin-right: 45%;
 }
 .video_text{
   float: right;
@@ -184,10 +185,10 @@ hr{
 
 .fb_resposive iframe {
   left:0;
-  top:0;
-  height:100%;
-  width:50%;
+  top:10%;
+  width:75%;
   position:absolute;
+  margin-left: 12.5%;
 }
 .sticky {
   position: fixed;
@@ -198,6 +199,49 @@ hr{
   z-index: 100;
   width: 99.9%;
 }
+.column, .column2{
+  display: table-cell;
+  width: 50%;
+  text-align: center;
+}
+.column2 h2{
+  background-color: hsla(0, 100%, 100%, 0.60);
+  margin-top: 20%;
+}
+.column2 h1{
+  background-color: hsla(0, 100%, 100%, 0.60);
+}
+.column2 p{
+  background-color: hsla(0, 100%, 100%, 0.60);
+  margin-top: 8%;
+  width: 50%;
+  margin-left: 45%;
+}
+.column2{
+  background-image: url("cover_twelve.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; 
+  background-size: cover; 
+}
+.row::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.row{
+  display: table;
+  width: 100%;
+  margin-top: 5px;
+  background-color: lightblue;
+}
+iframe{
+  height: 100%;
+}
+
+
 
 
  
