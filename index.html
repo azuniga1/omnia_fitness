@@ -5,7 +5,7 @@
         <link href="styles.css" type="text/css" rel="stylesheet"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        <script src="https://kit.fontawesome.com/d6c72cb9f7.js"></script>
     </head>
     <body>
         <div class="header">
@@ -58,24 +58,11 @@
             </p>
             </div>
         </div>
-        <div class="row">
-        <div class="column fb_resposive">
-          <h1 style="font-size: 4vw;">"Wolfpack" Members</h1>
-        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FOMNIAfitnessNT%2Fvideos%2F280872525903547%2F&show_text=0&width=476" width="476" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-      </div> 
-      <div class="column2">
-        <h1 style="font-size: 3vw;">The OMNIA Fitness Philosophy</h1>
-        <br>
-        <P style="font-size: 1.75vw;" >
-          You may feel nervouse to step out of your comfort zone,  but that is the beauty of <br>a successful program
-          you are never alone the journey. It may not be an easy road ahead but it will certainly be one worth taking.
-        </P>
-        <br>
-        
-      </div>
-      </div>
-      <div>
-      <h2 style="text-align:center">Persoanl Trainer</h2>
+        <div class="wrapper">
+          <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FOMNIAfitnessNT%2Fvideos%2F280872525903547%2F&show_text=0&width=476" width="476" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+          <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FOMNIAfitnessNT%2Fvideos%2F329889397722197%2F&show_text=0&width=380" width="476" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+        </div>
+        <h2 style="text-align:center">Personal Trainer</h2>
       <div class="card">
         <img src="cover_eleven.jpg" style="width:100%">
       </div>
@@ -84,42 +71,39 @@
         the gym. 
       </p>
       <p style="text-align:center" style="font-size: 1.75vw;">Current Certifications: NASM, CPT & AFAA <br>National Academy Sport and Medicine<br>
-       Aerobic Fitness Associations of American<br>Persoanl Trainer Certification
+       Aerobic Fitness Associations of American<br>Personal Trainer Certification
       </p>
       <hr>
       <div class="card1">
         <h1 style="font-size: 4vw;">"STRENGTH, SUPPORT, SUCCESS"</h1>
       </div>
       <hr>
-      <div class="contact_container">
-        <div style="text-align:center">
-          <h2>Contact Us</h2>
-          <p>Swing by for a cup of coffee, or leave us a message:</p>
-        </div>
-        <div class="contact_row">
-          <div class="contact_column">
-            <img src="Omnia_logo.jpg" style="width:75%">
-          </div>
-          <div class="contact_column">
-            <form action="/action_page.php">
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-              <label for="country">Country</label>
-              <select id="country" name="country">
-                <option value="australia">Australia</option>
-                <option value="canada">Canada</option>
-                <option value="usa">USA</option>
-              </select>
-              <label for="subject">Subject</label>
-              <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-              <input type="submit" value="Submit">
-            </form>
-          </div>
-        </div>
+      <div class="contact_title">
+        <h1>Say hello</h1>
+        <h2>We are always ready to serve you!</h2>
+      </div>
+      <div class="contact_form">
+        <form id="contact_form" method="post"  action="">
+          <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+          <br>
+          <input name="email" type="email" class="form-control" placeholder="Your Email" required>
+          <br>
+          <textarea name="message" class="form-control" placeholder="Message" row="4" required></textarea>   
+          <br>
+          <input type="submit" class="form-control submit" value="SEND MESSAGE">
+        </form>
       </div>
 
+      <div class="wrapper">
+        <h1>Social Media</h1>
+        <p>Follow Us</p>
+        <div class="media">
+            <Ul>
+                <li><i class="fab fa-facebook"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+            </Ul>
+        </div>
+    </div>
 
       <script>
            function myFunction() {
