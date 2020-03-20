@@ -15,7 +15,7 @@
       padding: 100px 25px;
     }
     .bg-grey {
-    background-color: gray;
+    background-color:#f6f6f6;
     }
     .container-fluid {
     padding: 60px 50px;
@@ -31,7 +31,7 @@
     }
     .navbar {
   margin-bottom: 0;
-  background-color: #574a47;
+  background-color: gray;
   z-index: 9999;
   border: 0;
   font-size: 12px !important;
@@ -45,7 +45,7 @@
 }
 
 .navbar-nav li a:hover, .navbar-nav li.active a {
-  color: #f4511e !important;
+  color: #00fdf1b9 !important;
   background-color: #fff !important;
 }
 
@@ -56,16 +56,20 @@
 footer .glyphicon {
   font-size: 20px;
   margin-bottom: 20px;
-  color: blue;
+  color: #06b5fa;
 }
 img {
   max-width: 100%;
-  height: 250px ;
+  height: 245px ;
 } 
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+#two{
+  width: 400px;
+  height: 250px ;
 }
     </style>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -77,7 +81,7 @@ img {
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Logo</a>
+        <a class="navbar-brand" href="#">OMNIA</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
@@ -92,7 +96,8 @@ img {
   </nav>
 
 <div class="jumbotron  text-center">
-  <h1>OMNIA Fitness</h1>
+  <img src="Photos/Omnia_logo.jpg" class="image-resposive rounded center" >
+  <br>
   <p>"Join the Pack" and Experience the OMNIA Fitness Journey!</p>
   <form class="form-inline">
     <div class="input-group">
@@ -109,6 +114,7 @@ img {
     <div class="col-sm-8">
     <h2>About OMNIA Fitness</h2>
     <h4>OMNIA fitness is a unique personal training studio, where we pride ourselves in helping you seek out and unleash your greatest potential. With 10 years and counting of personal training experience and counting education.(8 years in the U.S.A and now 5 years in Asia) we are proud to bring the latest in exercise science, advanced program design, and nutrition guidance, to Nha Trang, Vietnam.</h4>
+    <br>
     <button class="btn btn-default btn-lg">Get in Touch</button>
   </div>
   <div class="col-sm-4">
@@ -116,10 +122,10 @@ img {
   </div>
 </div>
 </div>
-  <div class="container-fluid">
+  <div class="container-fluid bg-grey">
     <div class="row">
       <div class="col-sm-4">
-        <img src="Photos/cover_twelve.jpg" class="image-resposive center">
+        <img id="two" src="Photos/cover_twelve.jpg" class="image-resposive center">
       </div>
       <div class="col-sm-8"></div>
     <h2>Our Philosophy</h2>
@@ -128,14 +134,14 @@ img {
 </div>
 </div>
 <!-- Container (Contact Section) -->
-<div id="contact" class="container-fluid bg-grey">
+<div id="contact" class="container-fluid ">
   <h2 class="text-center">CONTACT</h2>
   <div class="row">
     <div class="col-sm-5">
       <p>Contact us and we'll get back to you within 24 hours.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
-      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Nha Trang, Vietnam</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +84 167 979 9920</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> omniafitnessnt@icloud.com</p>
     </div>
     <div class="col-sm-7">
       <div class="row">
