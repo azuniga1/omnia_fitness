@@ -1,168 +1,143 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>OMNIA</title>
-        <link href="styles.css" type="text/css" rel="stylesheet"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://kit.fontawesome.com/d6c72cb9f7.js"></script>
-    </head>
-    <body>
-        <div class="header">
-        <img src="Omnia_logo.jpg" width="160" height="160" id="logo">
-        </div>
-        <div id="topmenu">
-          <div class="topnav" id='myTopnav' id="navbar" id="sticky">
-                <a class="active" href="javascript:void(0);">Home</a>
-                <a href="#about">About</a>
-                <a href="#Trainer">Trainer</a>
-                <a href="#Contact">Contact</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i> 
-                    </a>
-          </div>
-      </div>
-        <div class="slideshow_container">
-              <div class="mySlides fade">
-              <img src="cover.jpg" id="main" style="width:100%" class="main">
-              </div>
-              <div class="mySlides fade">
-                  <img src="cover_two.jpg" style="width:100%" class="main" >
-              </div>
-              <div class="mySlides fade">
-                  <img src="cover_three.jpg" style="width:100%" class="main">
-              </div>
-              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-              <a class="next" onclick="plusSlides(1)">&#10095;</a>
-              </div>
-              <br>
-              <div style="text-align:center">
-                  <span class="dot" onclick="currentSlide(1)"></span> 
-                  <span class="dot" onclick="currentSlide(2)"></span>
-                  <span class="dot" onclick="currentSlide(3)"></span>
-              </div>
-        </div>
-        <div class="main_article">
-            <div class="main_article2">
-            <H2 style="font-size: 2vw;">WELCOME TO</H2>
-            <H1 style="font-size: 4vw;" id="top">OMNIA</H1>
-            <H2 style="font-size: 2vw;" id="fit">FITNESS</H2>
-            <HR/>
-            <h2 style="font-size: 3vw;">"Join the Pack" and Experience <br>The OMNI fitness Journey!</h2>
-            </div>
-            <div class="main_article1">
-            <p style="font-size: 1.75vw;">OMNIA fitness is a unique persoanl training studio,<br> where we pride ourselves in helping you seek out<br>
-                and unleash your greatest potential.<br> With 10 years and counting of persoanl training<br> experience and 
-                continued education<br> (8 years in the U.S.A and now 2 yeras in Asia)<br> we are proud to bring the latest in 
-                exercise<br> science, advanced program design,<br> and nutrition guidance, to Nha Trang, Vietnam.
-            </p>
-            </div>
-        </div>
-        <div class="wrapper">
-          <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FOMNIAfitnessNT%2Fvideos%2F280872525903547%2F&show_text=0&width=476" width="476" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-          <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FOMNIAfitnessNT%2Fvideos%2F329889397722197%2F&show_text=0&width=380" width="476" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-        </div>
-        <h2 style="text-align:center">Personal Trainer</h2>
-      <div class="card">
-        <img src="cover_eleven.jpg" style="width:100%">
-      </div>
-      <h1 style="text-align:center" style="font-size: 4vw;" >Gabriel Zuniga</h1>
-      <p style="text-align:center"style="font-size: 1.75vw;" >Loves inspiring people to reach their full potential.<br>Inside and outside 
-        the gym. 
-      </p>
-      <p style="text-align:center" style="font-size: 1.75vw;">Current Certifications: NASM, CPT & AFAA <br>National Academy Sport and Medicine<br>
-       Aerobic Fitness Associations of American<br>Personal Trainer Certification
-      </p>
-      <hr>
-      <div class="card1">
-        <h1 style="font-size: 4vw;">"STRENGTH, SUPPORT, SUCCESS"</h1>
-      </div>
-      <hr>
-      <div class="contact_title">
-        <h1>Say hello</h1>
-        <h2>We are always ready to serve you!</h2>
-      </div>
-      <div class="contact_form">
-        <form id="contact_form" method="post"  action="">
-          <input name="name" type="text" class="form-control" placeholder="Your Name" required>
-          <br>
-          <input name="email" type="email" class="form-control" placeholder="Your Email" required>
-          <br>
-          <textarea name="message" class="form-control" placeholder="Message" row="4" required></textarea>   
-          <br>
-          <input type="submit" class="form-control submit" value="SEND MESSAGE">
-        </form>
-      </div>
+<html lang="en">
+<head>
+  <title>OMNIA fitness</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    .jumbotron {
+      background-color: gray; /* Gray */
+      color: #ffffff;
+      padding: 100px 25px;
+    }
+    .bg-grey {
+    background-color: #f6f6f6;
+    }
+    .container-fluid {
+    padding: 60px 50px;
+    }
+    .logo {
+    font-size: 200px;
+    }
+    @media screen and (max-width: 768px) {
+    .col-sm-4 {
+    text-align: center;
+    margin: 25px 0;
+    }
+    }
+    .navbar {
+  margin-bottom: 0;
+  background-color: #f4511e;
+  z-index: 9999;
+  border: 0;
+  font-size: 12px !important;
+  line-height: 1.42857143 !important;
+  letter-spacing: 4px;
+  border-radius: 0;
+}
 
-      <div class="wrapper">
-        <h1>Social Media</h1>
-        <p>Follow Us</p>
-        <div class="media">
-            <Ul>
-                <li><i class="fab fa-facebook"></i></li>
-                <li><i class="fab fa-instagram"></i></li>
-            </Ul>
-        </div>
+.navbar li a, .navbar .navbar-brand {
+  color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+  color: #f4511e !important;
+  background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  color: #fff !important;
+}
+    </style>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Logo</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#services">SERVICES</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#pricing">PRICING</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-      <script>
-           function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-             x.className += " responsive";
-              } else {
-            x.className = "topnav";
-                    }
-                }
-          </script>
-          <script>
-              window.onscroll = function() {myFunction1()};
-              
-              var navbar = document.getElementById("topmenu");
-              var sticky = navbar.offsetTop;
-              
-              function myFunction1() {
-                if (window.pageYOffset >= sticky) {
-                  navbar.classList.add("sticky")
-                } else {
-                  navbar.classList.remove("sticky");
-                }
-              }
-        </script>
-       
-
-        <script>
-            var slideIndex = 1;
-            showSlides(slideIndex);
-            
-            function plusSlides(n) {
-              showSlides(slideIndex += n);
-            }
-            
-            function currentSlide(n) {
-              showSlides(slideIndex = n);
-            }
-            
-            function showSlides(n) {
-              var i;
-              var slides = document.getElementsByClassName("mySlides");
-              var dots = document.getElementsByClassName("dot");
-              if (n > slides.length) {slideIndex = 1}    
-              if (n < 1) {slideIndex = slides.length}
-              for (i = 0; i < slides.length; i++) {
-                  slides[i].style.display = "none";  
-              }
-              for (i = 0; i < dots.length; i++) {
-                  dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex-1].style.display = "block";  
-              dots[slideIndex-1].className += " active";
-            }
-            </script>
-
-
-
-            
-    
-    </body>
+<div class="jumbotron  text-center">
+  <h1>OMNIA Fitness</h1>
+  <p>"Join the Pack" and Experience the OMNIA Fitness Journey!</p>
+  <form class="form-inline">
+    <div class="input-group">
+      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-danger">Subscribe</button>
+      </div>
+    </div>
+  </form>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+    <h2>About OMNIA Fitness</h2>
+    <h4>OMNIA fitness is a unique personal training studio, where we pride ourselves in helping you seek out and unleash your greatest potential. With 10 years and counting of personal training experience and counting education.(8 years in the U.S.A and now 5 years in Asia) we are proud to bring the latest in exercise science, advanced program design, and nutrition guidance, to Nha Trang, Vietnam.</h4>
+    <button class="btn btn-default btn-lg">Get in Touch</button>
+  </div>
+  <div class="col-sm-4">
+    <img src="Photos/cover_six.png" class="img-thumbnail" >
+  </div>
+</div>
+</div>
+  <div class="container-fluid bg-grey">
+    <div class="row">
+      <div class="col-sm-4">
+        <img src="Photos/cover_twelve.jpg" class="img-thumbnail">
+      </div>
+      <div class="col-sm-8"></div>
+    <h2>Our Philosophy</h2>
+    <h4><strong>PHILOSOPHY:</strong> You may feel nervous to step out of your comfort zone, but that is the beauty of a successful fitness program here at OMNIA Fitness; you are never alone in the journey. It may not be an easy road ahead but will certainly be one worth taking. We love to inspiring people to reach their full potential, inside and outside of the gym. Through individual program design, we will ensure your specific needs are effectively and professionally catered to. OMNIA fitness is honored to aid you in your personal journey towards overall health and happiness.</h4>
+  </div>
+</div>
+</div>
+<div class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
 </html>
