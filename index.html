@@ -15,7 +15,7 @@
       padding: 100px 25px;
     }
     .bg-grey {
-    background-color: #f6f6f6;
+    background-color: gray;
     }
     .container-fluid {
     padding: 60px 50px;
@@ -31,7 +31,7 @@
     }
     .navbar {
   margin-bottom: 0;
-  background-color: #f4511e;
+  background-color: #574a47;
   z-index: 9999;
   border: 0;
   font-size: 12px !important;
@@ -53,8 +53,22 @@
   border-color: transparent;
   color: #fff !important;
 }
+footer .glyphicon {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: blue;
+}
+img {
+  max-width: 100%;
+  height: 250px ;
+} 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
     </style>
-<body>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
@@ -89,7 +103,8 @@
     </div>
   </form>
 </div>
-<div class="container-fluid">
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
   <div class="row">
     <div class="col-sm-8">
     <h2>About OMNIA Fitness</h2>
@@ -97,14 +112,14 @@
     <button class="btn btn-default btn-lg">Get in Touch</button>
   </div>
   <div class="col-sm-4">
-    <img src="Photos/cover_six.png" class="img-thumbnail" >
+    <img src="Photos/cover_six.png" class="image-resposive center" >
   </div>
 </div>
 </div>
-  <div class="container-fluid bg-grey">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-sm-4">
-        <img src="Photos/cover_twelve.jpg" class="img-thumbnail">
+        <img src="Photos/cover_twelve.jpg" class="image-resposive center">
       </div>
       <div class="col-sm-8"></div>
     <h2>Our Philosophy</h2>
@@ -112,7 +127,8 @@
   </div>
 </div>
 </div>
-<div class="container-fluid bg-grey">
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
   <h2 class="text-center">CONTACT</h2>
   <div class="row">
     <div class="col-sm-5">
@@ -139,5 +155,11 @@
     </div>
   </div>
 </div>
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
+</footer>
 </body>
 </html>
